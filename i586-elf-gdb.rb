@@ -2,8 +2,9 @@ require 'formula'
 
 class I586ElfGdb < Formula
   homepage 'http://gcc.gnu.org'
-  url 'http://ftp.gnu.org/gnu/gdb/gdb-7.6.tar.bz2'
-  sha256 'a410e8f35ee70cce83dbbf1da9e2a8373f271ac0e4b71db4336ae293fc7bdf1b'
+  url "https://ftp.gnu.org/gnu/gdb/gdb-8.1.tar.xz"
+  mirror "https://ftpmirror.gnu.org/gdb/gdb-8.1.tar.xz"
+  sha256 "af61a0263858e69c5dce51eab26662ff3d2ad9aa68da9583e8143b5426be4b34"
 
   depends_on 'i586-elf-binutils'
   depends_on 'i586-elf-gcc'
