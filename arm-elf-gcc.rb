@@ -2,8 +2,8 @@ require 'formula'
 
 class ArmElfGcc < Formula
   homepage 'http://gcc.gnu.org'
-  url 'http://ftpmirror.gnu.org/gcc/gcc-7.3.0/gcc-7.3.0.tar.bz2'
-  mirror 'http://ftp.gnu.org/gnu/gcc/gcc-7.3.0/gcc-7.3.0.tar.bz2'
+  url 'http://ftpmirror.gnu.org/gcc/gcc-7.3.0/gcc-7.3.0.tar.xz'
+  mirror 'http://ftp.gnu.org/gnu/gcc/gcc-7.3.0/gcc-7.3.0.tar.xz'
   sha256 '832ca6ae04636adbb430e865a1451adf6979ab44ca1c8374f61fba65645ce15c'
 
   depends_on 'gmp'
