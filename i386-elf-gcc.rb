@@ -2,9 +2,9 @@ require 'formula'
 
 class I386ElfGcc < Formula
   homepage 'http://gcc.gnu.org'
-  url 'http://ftpmirror.gnu.org/gcc/gcc-7.3.0/gcc-7.3.0.tar.xz'
-  mirror 'http://ftp.gnu.org/gnu/gcc/gcc-7.3.0/gcc-7.3.0.tar.xz'
-  sha256 '832ca6ae04636adbb430e865a1451adf6979ab44ca1c8374f61fba65645ce15c'
+  url "https://ftp.gnu.org/gnu/gcc/gcc-8.1.0/gcc-8.1.0.tar.xz"
+  mirror "https://ftpmirror.gnu.org/gcc/gcc-8.1.0/gcc-8.1.0.tar.xz"
+  sha256 "1d1866f992626e61349a1ccd0b8d5253816222cdc13390dcfaa74b093aa2b153"
   revision 1
 
   depends_on 'gmp'
@@ -15,10 +15,10 @@ class I386ElfGcc < Formula
   def install
     binutils = Formulary.factory 'i386-elf-binutils'
 
-    ENV['CC'] = '/usr/local/bin/gcc-7'
-    ENV['CXX'] = '/usr/local/bin/g++-7'
-    ENV['CPP'] = '/usr/local/bin/cpp-7'
-    ENV['LD'] = '/usr/local/bin/gcc-7'
+    ENV['CC'] = '/usr/local/bin/gcc-8'
+    ENV['CXX'] = '/usr/local/bin/g++-8'
+    ENV['CPP'] = '/usr/local/bin/cpp-8'
+    ENV['LD'] = '/usr/local/bin/gcc-8'
     ENV['PATH'] += ":#{binutils.prefix/"bin"}"
 
     mkdir 'build' do

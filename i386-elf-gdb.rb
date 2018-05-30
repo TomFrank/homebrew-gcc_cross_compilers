@@ -10,10 +10,10 @@ class I386ElfGdb < Formula
   depends_on 'i386-elf-gcc'
 
   def install
-    # ENV['CC'] = '/usr/local/bin/gcc-7'
-    # ENV['CXX'] = '/usr/local/bin/g++-7'
-    # ENV['CPP'] = '/usr/local/bin/cpp-7'
-    # ENV['LD'] = '/usr/local/bin/gcc-7'
+    # ENV['CC'] = '/usr/local/bin/gcc-8'
+    # ENV['CXX'] = '/usr/local/bin/g++-8'
+    # ENV['CPP'] = '/usr/local/bin/cpp-8'
+    # ENV['LD'] = '/usr/local/bin/gcc-8'
 
     mkdir 'build' do
       system '../configure', '--target=i386-elf', "--prefix=#{prefix}", '--disable-werror'
